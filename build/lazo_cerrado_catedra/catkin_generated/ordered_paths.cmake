@@ -1,1 +1,0 @@
-set(ORDERED_PATHS "/home/juan/catkin_ws/devel/.private/lazo_abierto_catedra/lib;/opt/ros/kinetic/lib")

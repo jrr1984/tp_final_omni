@@ -1,0 +1,1 @@
+/home/juan/catkin_ws/devel/.private/lazo_cerrado/share/lazo_cerrado/cmake/lazo_cerradoConfig.cmake

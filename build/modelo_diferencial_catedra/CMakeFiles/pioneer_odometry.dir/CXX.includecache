@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/juan/catkin_ws/devel/.private/robmovil_msgs/include/robmovil_msgs/EncoderTicks.h
+/home/juan/catkin_ws/devel/.private/robmovil_msgs/include/robmovil_msgs/MultiEncoderTicks.h
 string
 -
 vector
@@ -22,8 +22,6 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 std_msgs/Header.h
--
-std_msgs/Int32.h
 -
 std_msgs/Int32.h
 -
@@ -43,11 +41,13 @@ ros/ros.h
 -
 geometry_msgs/Twist.h
 -
-robmovil_msgs/EncoderTicks.h
+robmovil_msgs/MultiEncoderTicks.h
 -
 tf/tf.h
 -
 tf/transform_broadcaster.h
+-
+math.h
 -
 
 /home/juan/catkin_ws/src/modelo_diferencial_catedra/src/pioneer_odometry_node.cpp

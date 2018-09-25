@@ -1,1 +1,0 @@
-/home/juan/catkin_ws/devel/.private/modelo_diferencial/lib/pkgconfig/modelo_diferencial.pc

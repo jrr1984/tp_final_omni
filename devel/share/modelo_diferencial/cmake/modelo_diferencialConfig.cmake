@@ -1,1 +1,0 @@
-/home/juan/catkin_ws/devel/.private/modelo_diferencial/share/modelo_diferencial/cmake/modelo_diferencialConfig.cmake

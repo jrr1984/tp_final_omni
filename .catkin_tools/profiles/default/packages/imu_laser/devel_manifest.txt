@@ -1,6 +1,0 @@
-imu_laser
-/home/juan/catkin_ws/devel/.private/imu_laser/share/imu_laser/cmake/imu_laserConfig-version.cmake /home/juan/catkin_ws/devel/share/imu_laser/cmake/imu_laserConfig-version.cmake
-/home/juan/catkin_ws/devel/.private/imu_laser/share/imu_laser/cmake/imu_laserConfig.cmake /home/juan/catkin_ws/devel/share/imu_laser/cmake/imu_laserConfig.cmake
-/home/juan/catkin_ws/devel/.private/imu_laser/lib/pkgconfig/imu_laser.pc /home/juan/catkin_ws/devel/lib/pkgconfig/imu_laser.pc
-/home/juan/catkin_ws/devel/.private/imu_laser/lib/imu_laser/landmark_detector /home/juan/catkin_ws/devel/lib/imu_laser/landmark_detector
-/home/juan/catkin_ws/devel/.private/imu_laser/lib/imu_laser/imu_calibrator /home/juan/catkin_ws/devel/lib/imu_laser/imu_calibrator

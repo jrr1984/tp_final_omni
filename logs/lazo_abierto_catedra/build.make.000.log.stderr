@@ -1,4 +1,0 @@
-[01m[K/home/juan/catkin_ws/src/lazo_abierto_catedra/src/trajectory_generator_node.cpp:[m[K In function ‘[01m[Kvoid build_sin_trajectory(double, double, double, double, robmovil_msgs::Trajectory&, nav_msgs::Path&)[m[K’:
-[01m[K/home/juan/catkin_ws/src/lazo_abierto_catedra/src/trajectory_generator_node.cpp:55:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kinitial_orientation[m[K’ [-Wunused-variable]
-   double initial_orientation = atan2( amplitude * (cycles * 2*M_PI * 1/total_time), cycles * 2*M_PI * 1/total_time );
-[01;32m[K          ^[m[K

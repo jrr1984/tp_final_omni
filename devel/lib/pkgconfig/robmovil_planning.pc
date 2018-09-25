@@ -1,1 +1,0 @@
-/home/juan/catkin_ws/devel/.private/robmovil_planning/lib/pkgconfig/robmovil_planning.pc

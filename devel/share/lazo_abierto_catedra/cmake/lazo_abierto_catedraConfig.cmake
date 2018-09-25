@@ -1,1 +1,0 @@
-/home/juan/catkin_ws/devel/.private/lazo_abierto_catedra/share/lazo_abierto_catedra/cmake/lazo_abierto_catedraConfig.cmake

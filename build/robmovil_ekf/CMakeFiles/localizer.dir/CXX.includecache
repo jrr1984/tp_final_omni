@@ -105,11 +105,11 @@ nav_msgs/Odometry.h
 -
 geometry_msgs/PoseWithCovarianceStamped.h
 -
-geometry_msgs/PoseArray.h
--
 tf2_ros/transform_broadcaster.h
 -
 tf2/LinearMath/Transform.h
+-
+geometry_msgs/PoseArray.h
 -
 localizer_ekf.h
 /home/juan/catkin_ws/src/robmovil_ekf/src/localizer_ekf.h

@@ -88,7 +88,7 @@ bool KinematicPositionController::control(const ros::Time& t, double& v_x, doubl
 bool KinematicPositionController::getCurrentPose(const ros::Time& t, double& x, double& y, double& a)
 {
   tf2::Transform odom_to_robot;
-  if (not lookupTransformSafe(tfBuffer_, "odom", "base_link", t, odom_to_robot))
+  if (not lookupTransformSafe(tfBuffer_, "odom", "base_link_ekf", t, odom_to_robot))
     return false;
 
   x = odom_to_robot.getOrigin().getX();

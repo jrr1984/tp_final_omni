@@ -1,4 +1,0 @@
-[35m[1mScanning dependencies of target kfilter[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/kfilter.dir/src/kalman/kstatics.cpp.o[0m
-[100%] [32m[1mLinking CXX shared library /home/juan/catkin_ws/devel/.private/kfilter/lib/libkfilter.so[0m
-[100%] Built target kfilter

@@ -1,2 +1,0 @@
-set(robmovil_msgs_viejo_MESSAGE_FILES "/home/juan/catkin_ws/src/robmovil_msgs_viejo/msg/EncoderTicks.msg;/home/juan/catkin_ws/src/robmovil_msgs_viejo/msg/Trajectory.msg;/home/juan/catkin_ws/src/robmovil_msgs_viejo/msg/TrajectoryPoint.msg;/home/juan/catkin_ws/src/robmovil_msgs_viejo/msg/Landmark.msg;/home/juan/catkin_ws/src/robmovil_msgs_viejo/msg/LandmarkArray.msg")
-set(robmovil_msgs_viejo_SERVICE_FILES "")

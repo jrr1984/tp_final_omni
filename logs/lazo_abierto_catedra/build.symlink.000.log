@@ -1,6 +1,0 @@
-Symlinking /home/juan/catkin_ws/devel/share/lazo_abierto_catedra/cmake/lazo_abierto_catedraConfig-version.cmake
-Symlinking /home/juan/catkin_ws/devel/share/lazo_abierto_catedra/cmake/lazo_abierto_catedraConfig.cmake
-Symlinking /home/juan/catkin_ws/devel/lib/libtrajectory_controller.so
-Symlinking /home/juan/catkin_ws/devel/lib/pkgconfig/lazo_abierto_catedra.pc
-Symlinking /home/juan/catkin_ws/devel/lib/lazo_abierto_catedra/trajectory_follower
-Symlinking /home/juan/catkin_ws/devel/lib/lazo_abierto_catedra/trajectory_generator

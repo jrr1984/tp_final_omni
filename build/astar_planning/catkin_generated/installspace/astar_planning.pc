@@ -1,8 +1,0 @@
-prefix=/home/juan/catkin_ws/install
-
-Name: astar_planning
-Description: Description of astar_planning
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/juan/catkin_ws/install/lib 
-Requires: roscpp robmovil_planning

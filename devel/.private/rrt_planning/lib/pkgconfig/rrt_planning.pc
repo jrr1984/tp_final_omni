@@ -1,8 +1,0 @@
-prefix=/home/juan/catkin_ws/devel/.private/rrt_planning
-
-Name: rrt_planning
-Description: Description of rrt_planning
-Version: 0.0.0
-Cflags: -I/home/juan/catkin_ws/src/rrt_planning/include
-Libs: -L/home/juan/catkin_ws/devel/.private/rrt_planning/lib -lrrt_planner
-Requires: roscpp robmovil_planning

@@ -1,8 +1,0 @@
-prefix=/home/juan/catkin_ws/install
-
-Name: lazo_abierto_catedra
-Description: Description of lazo_abierto_catedra
-Version: 0.0.0
-Cflags: -I/home/juan/catkin_ws/install/include
-Libs: -L/home/juan/catkin_ws/install/lib -ltrajectory_controller
-Requires: roscpp
