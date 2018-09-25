@@ -1,0 +1,8 @@
+prefix=/home/juan/catkin_ws/install
+
+Name: lazo_cerrado_catedra
+Description: Description of lazo_cerrado_catedra
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/juan/catkin_ws/install/lib 
+Requires: roscpp tf2_ros lazo_abierto_catedra

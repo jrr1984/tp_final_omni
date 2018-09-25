@@ -1,0 +1,1 @@
+/home/juan/catkin_ws/devel/.private/lazo_abierto_catedra/lib/pkgconfig/lazo_abierto_catedra.pc

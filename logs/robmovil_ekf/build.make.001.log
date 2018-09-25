@@ -1,0 +1,5 @@
+[35m[1mScanning dependencies of target localizer[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/localizer.dir/src/localizer_ekf.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/localizer.dir/src/localizer.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable /home/juan/catkin_ws/devel/.private/robmovil_ekf/lib/robmovil_ekf/localizer[0m
+[100%] Built target localizer

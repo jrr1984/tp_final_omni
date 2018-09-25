@@ -1,0 +1,8 @@
+prefix=/home/juan/catkin_ws/devel/.private/robmovil_planning
+
+Name: robmovil_planning
+Description: Description of robmovil_planning
+Version: 0.0.0
+Cflags: -I/home/juan/catkin_ws/src/robmovil_planning/include
+Libs: -L/home/juan/catkin_ws/devel/.private/robmovil_planning/lib -lgrid_planner
+Requires: roscpp

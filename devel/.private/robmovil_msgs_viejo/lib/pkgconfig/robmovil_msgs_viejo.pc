@@ -1,0 +1,8 @@
+prefix=/home/juan/catkin_ws/devel/.private/robmovil_msgs_viejo
+
+Name: robmovil_msgs_viejo
+Description: Description of robmovil_msgs_viejo
+Version: 0.0.0
+Cflags: -I/home/juan/catkin_ws/devel/.private/robmovil_msgs_viejo/include
+Libs: -L/home/juan/catkin_ws/devel/.private/robmovil_msgs_viejo/lib 
+Requires: message_runtime

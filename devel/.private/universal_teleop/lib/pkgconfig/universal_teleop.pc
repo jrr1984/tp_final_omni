@@ -1,0 +1,8 @@
+prefix=/home/juan/catkin_ws/devel/.private/universal_teleop
+
+Name: universal_teleop
+Description: Description of universal_teleop
+Version: 0.1.0
+Cflags: -I/home/juan/catkin_ws/devel/.private/universal_teleop/include
+Libs: -L/home/juan/catkin_ws/devel/.private/universal_teleop/lib 
+Requires: roscpp geometry_msgs nav_msgs std_msgs message_runtime

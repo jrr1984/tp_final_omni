@@ -1,0 +1,5 @@
+Symlinking /home/juan/catkin_ws/devel/share/robmovil_planning/cmake/robmovil_planningConfig.cmake
+Symlinking /home/juan/catkin_ws/devel/share/robmovil_planning/cmake/robmovil_planningConfig-version.cmake
+Symlinking /home/juan/catkin_ws/devel/lib/libgrid_planner.so
+Symlinking /home/juan/catkin_ws/devel/lib/pkgconfig/robmovil_planning.pc
+Symlinking /home/juan/catkin_ws/devel/lib/robmovil_planning/path_planning

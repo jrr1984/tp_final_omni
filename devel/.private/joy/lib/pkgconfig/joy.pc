@@ -1,0 +1,8 @@
+prefix=/home/juan/catkin_ws/devel/.private/joy
+
+Name: joy
+Description: Description of joy
+Version: 1.10.1
+Cflags: 
+Libs: -L/home/juan/catkin_ws/devel/.private/joy/lib 
+Requires: roscpp diagnostic_updater sensor_msgs

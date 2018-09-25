@@ -1,0 +1,43 @@
+[35m[1mScanning dependencies of target _universal_teleop_generate_messages_check_deps_Event[0m
+[35m[1mScanning dependencies of target _universal_teleop_generate_messages_check_deps_Control[0m
+[  0%] Built target _universal_teleop_generate_messages_check_deps_Control
+[  0%] Built target _universal_teleop_generate_messages_check_deps_Event
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[  0%] Built target std_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target universal_teleop_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target universal_teleop_generate_messages_nodejs[0m
+[  6%] [34m[1mGenerating C++ code from universal_teleop/Event.msg[0m
+[ 13%] [34m[1mGenerating Javascript code from universal_teleop/Event.msg[0m
+[ 20%] [34m[1mGenerating Javascript code from universal_teleop/Control.msg[0m
+[ 20%] Built target universal_teleop_generate_messages_nodejs
+[ 26%] [34m[1mGenerating C++ code from universal_teleop/Control.msg[0m
+[35m[1mScanning dependencies of target universal_teleop_generate_messages_py[0m
+[ 33%] [34m[1mGenerating Python from MSG universal_teleop/Event[0m
+[ 33%] Built target universal_teleop_generate_messages_cpp
+[35m[1mScanning dependencies of target universal_teleop_generate_messages_lisp[0m
+[ 40%] [34m[1mGenerating Lisp code from universal_teleop/Event.msg[0m
+[ 46%] [34m[1mGenerating Lisp code from universal_teleop/Control.msg[0m
+[ 53%] [34m[1mGenerating Python from MSG universal_teleop/Control[0m
+[ 53%] Built target universal_teleop_generate_messages_lisp
+[35m[1mScanning dependencies of target universal_teleop_generate_messages_eus[0m
+[ 60%] [34m[1mGenerating EusLisp code from universal_teleop/Event.msg[0m
+[ 66%] [34m[1mGenerating Python msg __init__.py for universal_teleop[0m
+[ 73%] [34m[1mGenerating EusLisp code from universal_teleop/Control.msg[0m
+[ 80%] [34m[1mGenerating EusLisp manifest code for universal_teleop[0m
+[ 80%] Built target universal_teleop_generate_messages_py
+[35m[1mScanning dependencies of target universal_teleop[0m
+[ 86%] [32mBuilding CXX object CMakeFiles/universal_teleop.dir/src/teleop_node.cpp.o[0m
+[ 93%] [32mBuilding CXX object CMakeFiles/universal_teleop.dir/src/teleop.cpp.o[0m
+[ 93%] Built target universal_teleop_generate_messages_eus
+[35m[1mScanning dependencies of target universal_teleop_generate_messages[0m
+[ 93%] Built target universal_teleop_generate_messages
+[100%] [32m[1mLinking CXX executable /home/juan/catkin_ws/devel/.private/universal_teleop/lib/universal_teleop/universal_teleop[0m
+[100%] Built target universal_teleop

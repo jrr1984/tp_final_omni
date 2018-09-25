@@ -1,0 +1,1 @@
+/home/juan/catkin_ws/devel/.private/lazo_cerrado_catedra/share/lazo_cerrado_catedra/cmake/lazo_cerrado_catedraConfig.cmake

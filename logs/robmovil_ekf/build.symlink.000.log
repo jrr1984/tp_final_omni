@@ -1,0 +1,4 @@
+Symlinking /home/juan/catkin_ws/devel/share/robmovil_ekf/cmake/robmovil_ekfConfig-version.cmake
+Symlinking /home/juan/catkin_ws/devel/share/robmovil_ekf/cmake/robmovil_ekfConfig.cmake
+Symlinking /home/juan/catkin_ws/devel/lib/robmovil_ekf/localizer
+Symlinking /home/juan/catkin_ws/devel/lib/pkgconfig/robmovil_ekf.pc

@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/juan/catkin_ws/devel/.private/ros_intro/setup.sh

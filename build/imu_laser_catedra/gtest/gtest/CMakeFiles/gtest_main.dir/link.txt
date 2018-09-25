@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC  -std=c++11  -shared -Wl,-soname,libgtest_main.so -o libgtest_main.so CMakeFiles/gtest_main.dir/src/gtest_main.cc.o  -L/home/juan/catkin_ws/build/imu_laser_catedra/gtest/gtest/src -lpthread libgtest.so -lpthread -Wl,-rpath,/home/juan/catkin_ws/build/imu_laser_catedra/gtest/gtest/src:/home/juan/catkin_ws/build/imu_laser_catedra/gtest/gtest 

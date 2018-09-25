@@ -1,0 +1,1 @@
+/home/juan/catkin_ws/devel/.private/ros_intro/share/ros_intro/cmake/ros_introConfig-version.cmake

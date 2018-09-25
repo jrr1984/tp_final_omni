@@ -1,0 +1,5 @@
+Symlinking /home/juan/catkin_ws/devel/share/imu_laser/cmake/imu_laserConfig-version.cmake
+Symlinking /home/juan/catkin_ws/devel/share/imu_laser/cmake/imu_laserConfig.cmake
+Symlinking /home/juan/catkin_ws/devel/lib/pkgconfig/imu_laser.pc
+Symlinking /home/juan/catkin_ws/devel/lib/imu_laser/landmark_detector
+Symlinking /home/juan/catkin_ws/devel/lib/imu_laser/imu_calibrator

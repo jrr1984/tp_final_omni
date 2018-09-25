@@ -1,0 +1,1 @@
+/home/juan/catkin_ws/devel/.private/robmovil_msgs_viejo/lib/python2.7/dist-packages/robmovil_msgs_viejo/__init__.py

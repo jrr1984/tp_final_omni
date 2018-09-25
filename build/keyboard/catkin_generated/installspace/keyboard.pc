@@ -1,0 +1,8 @@
+prefix=/home/juan/catkin_ws/install
+
+Name: keyboard
+Description: Description of keyboard
+Version: 0.1.2
+Cflags: -I/home/juan/catkin_ws/install/include
+Libs: -L/home/juan/catkin_ws/install/lib 
+Requires: roscpp std_msgs message_runtime

@@ -1,0 +1,8 @@
+In file included from [01m[K/home/juan/catkin_ws/src/modelo_diferencial/src/pioneer_odometry_node.cpp:2:0[m[K:
+[01m[K/home/juan/catkin_ws/src/modelo_diferencial/src/pioneer_odometry.h:35:21:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+     double theta_ = 0;
+[01;32m[K                     ^[m[K
+In file included from [01m[K/home/juan/catkin_ws/src/modelo_diferencial/src/pioneer_odometry.cpp:1:0[m[K:
+[01m[K/home/juan/catkin_ws/src/modelo_diferencial/src/pioneer_odometry.h:35:21:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+     double theta_ = 0;
+[01;32m[K                     ^[m[K

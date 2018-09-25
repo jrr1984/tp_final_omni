@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target clock_publisher[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/clock_publisher.dir/src/clock_publisher.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/juan/catkin_ws/devel/.private/vrep_util/lib/vrep_util/clock_publisher[0m
+[100%] Built target clock_publisher

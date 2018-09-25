@@ -1,0 +1,4 @@
+Symlinking /home/juan/catkin_ws/devel/share/ros_intro/cmake/ros_introConfig.cmake
+Symlinking /home/juan/catkin_ws/devel/share/ros_intro/cmake/ros_introConfig-version.cmake
+Symlinking /home/juan/catkin_ws/devel/lib/pkgconfig/ros_intro.pc
+Symlinking /home/juan/catkin_ws/devel/lib/ros_intro/keys_to_twist

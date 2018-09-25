@@ -1,0 +1,3 @@
+[35m[1mScanning dependencies of target rrt_planner[0m
+[100%] [32m[1mLinking CXX shared library /home/juan/catkin_ws/devel/.private/rrt_planning/lib/librrt_planner.so[0m
+[100%] Built target rrt_planner

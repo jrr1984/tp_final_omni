@@ -1,0 +1,8 @@
+prefix=/home/juan/catkin_ws/install
+
+Name: imu_laser_catedra
+Description: Description of imu_laser_catedra
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/juan/catkin_ws/install/lib 
+Requires: roscpp

@@ -1,0 +1,1 @@
+/home/juan/catkin_ws/devel/.private/imu_laser_catedra/share/imu_laser_catedra/cmake/imu_laser_catedraConfig.cmake

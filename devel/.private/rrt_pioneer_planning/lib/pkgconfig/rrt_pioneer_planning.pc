@@ -1,0 +1,8 @@
+prefix=/home/juan/catkin_ws/devel/.private/rrt_pioneer_planning
+
+Name: rrt_pioneer_planning
+Description: Description of rrt_pioneer_planning
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/juan/catkin_ws/devel/.private/rrt_pioneer_planning/lib 
+Requires: roscpp robmovil_planning rrt_planning
