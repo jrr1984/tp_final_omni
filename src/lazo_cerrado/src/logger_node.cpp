@@ -30,15 +30,16 @@ class Logger
 
   private:
 
-    ros::Subscriber robot_pose_sub_, ground_truth_sub_, goal_poses_sub_,vel_real_pub,desired_vel_;
+    ros::Subscriber robot_pose_sub_, ground_truth_sub_, goal_poses_sub_,vel_real_pub,desired_vel_,base_link_ekf_sub_;
 
-    std::ofstream robot_logfile_, ground_truth_logfile_, goal_poses_logfile_,real_vel_logfile_,desired_vel_logfile_;
+    std::ofstream robot_logfile_, ground_truth_logfile_, goal_poses_logfile_,real_vel_logfile_,desired_vel_logfile_,base_link_ekf_pose_logfile_;
 
   // funciones auxiliares
 
     void handleRobotPose(const nav_msgs::Odometry& msg);
 
     void handleGroundTruthPose(const nav_msgs::Odometry& msg);
+    void handleEKFPose(const nav_msgs::Odometry& msg);
 
     void handleGoalPose(const geometry_msgs::PoseStamped& msg);
     //void handleVelReal(const nav_msgs::Odometry& msg);
@@ -46,13 +47,14 @@ class Logger
 };
 
 Logger::Logger(ros::NodeHandle& nh)
-  : robot_logfile_( timestamp() + "_poses.log" ), ground_truth_logfile_( timestamp() + "_ground-truth.log" ), goal_poses_logfile_( timestamp() + "_goals.log" ), desired_vel_logfile_(timestamp() + "_desired_vel.log" )
+  : robot_logfile_( timestamp() + "_poses.log" ), ground_truth_logfile_( timestamp() + "_ground-truth.log" ), goal_poses_logfile_( timestamp() + "_goals.log" ), desired_vel_logfile_(timestamp() + "_desired_vel.log" ), base_link_ekf_pose_logfile_(timestamp() + "_base_link_ekf_pose.log")
 {
   robot_pose_sub_ = nh.subscribe("/robot/odometry", 1, &Logger::handleRobotPose, this);
   ground_truth_sub_ = nh.subscribe("/robot/ground_truth", 1, &Logger::handleGroundTruthPose, this);
   goal_poses_sub_ = nh.subscribe("/goal_pose", 1, &Logger::handleGoalPose, this);
   //vel_real_pub = nh.subscribe("/robot/real_velocity",1,&Logger::handleVelReal,this);
    desired_vel_ = nh.subscribe("/robot/cmd_vel",1,&Logger::handleDesiredVel,this);
+   base_link_ekf_sub_ = nh.subscribe("/robot/base_link_ekf_pose",1,&Logger::handleEKFPose,this);
 }
 
 
@@ -68,15 +70,10 @@ void Logger::handleRobotPose(const nav_msgs::Odometry& msg)
   robot_logfile_ << msg.header.stamp.toSec() << " " << msg.pose.pose.position.x << " " << msg.pose.pose.position.y << " " << tf2::getYaw( msg.pose.pose.orientation )  << std::endl;
 }
 
-/*void Logger::handleVelReal(const nav_msgs::Odometry& msg)
+void Logger::handleEKFPose(const nav_msgs::Odometry& msg)
 {
-  real_vel_logfile_ << msg.header.stamp.toSec() << " " << msg.twist.twist.linear.x << " " << msg.twist.twist.linear.y << " " << std::endl;
-}*/
-
-/*void Logger::handleDesiredVel(const nav_msgs::Odometry& msg)
-{
-  real_vel_logfile_ << msg.header.stamp.toSec() << " " << msg.twist.twist.linear.x << " " << msg.twist.twist.linear.y << " " << std::endl;
-}*/
+  base_link_ekf_pose_logfile_ << msg.header.stamp.toSec() << " " << msg.pose.pose.position.x << " " << msg.pose.pose.position.y << " " << std::endl;
+}
 
 void Logger::handleGroundTruthPose(const nav_msgs::Odometry& msg)
 {

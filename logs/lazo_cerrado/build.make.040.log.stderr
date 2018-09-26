@@ -1,0 +1,158 @@
+[01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/logger_node.cpp:[m[K In constructor ‘[01m[KLogger::Logger(ros::NodeHandle&)[m[K’:
+[01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/logger_node.cpp:57:90:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::subscribe(const char [26], int, void (Logger::*)(const Odometry&))[m[K’
+    base_link_ekf_sub_ = nh.subscribe("/robot/base_link_ekf_pose",1,&Logger::handleEKFPose);
+[01;32m[K                                                                                          ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/logger_node.cpp:2[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:402:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M), T*, const ros::TransportHints&)
+   Subscriber subscribe(const std::string& topic, uint32_t queue_size, void(T::*fp)(M), T* obj, 
+[01;32m[K              ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:402:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/logger_node.cpp:57:90:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 3 provided
+    base_link_ekf_sub_ = nh.subscribe("/robot/base_link_ekf_pose",1,&Logger::handleEKFPose);
+[01;32m[K                                                                                          ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/logger_node.cpp:2[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:413:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M) const, T*, const ros::TransportHints&)
+   Subscriber subscribe(const std::string& topic, uint32_t queue_size, void(T::*fp)(M) const, T* obj, 
+[01;32m[K              ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:413:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/logger_node.cpp:57:90:[m[K [01;36m[Knote: [m[K  types ‘[01m[Kvoid (T::)(M) const[m[K’ and ‘[01m[Kvoid (Logger::)(const Odometry&) {aka void (Logger::)(const nav_msgs::Odometry_<std::allocator<void> >&)}[m[K’ have incompatible cv-qualifiers
+    base_link_ekf_sub_ = nh.subscribe("/robot/base_link_ekf_pose",1,&Logger::handleEKFPose);
+[01;32m[K                                                                                          ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/logger_node.cpp:2[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:465:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&), T*, const ros::TransportHints&)
+   Subscriber subscribe(const std::string& topic, uint32_t queue_size, 
+[01;32m[K              ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:465:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/logger_node.cpp:57:90:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::shared_ptr<const M>[m[K’ and ‘[01m[Kconst Odometry {aka const nav_msgs::Odometry_<std::allocator<void> >}[m[K’
+    base_link_ekf_sub_ = nh.subscribe("/robot/base_link_ekf_pose",1,&Logger::handleEKFPose);
+[01;32m[K                                                                                          ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/logger_node.cpp:2[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:475:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&) const, T*, const ros::TransportHints&)
+   Subscriber subscribe(const std::string& topic, uint32_t queue_size, 
+[01;32m[K              ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:475:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/logger_node.cpp:57:90:[m[K [01;36m[Knote: [m[K  types ‘[01m[Kvoid (T::)(const boost::shared_ptr<const M>&) const[m[K’ and ‘[01m[Kvoid (Logger::)(const Odometry&) {aka void (Logger::)(const nav_msgs::Odometry_<std::allocator<void> >&)}[m[K’ have incompatible cv-qualifiers
+    base_link_ekf_sub_ = nh.subscribe("/robot/base_link_ekf_pose",1,&Logger::handleEKFPose);
+[01;32m[K                                                                                          ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/logger_node.cpp:2[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:529:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M), const boost::shared_ptr<U>&, const ros::TransportHints&)
+   Subscriber subscribe(const std::string& topic, uint32_t queue_size, void(T::*fp)(M), 
+[01;32m[K              ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:529:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/logger_node.cpp:57:90:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 3 provided
+    base_link_ekf_sub_ = nh.subscribe("/robot/base_link_ekf_pose",1,&Logger::handleEKFPose);
+[01;32m[K                                                                                          ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/logger_node.cpp:2[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:540:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M) const, const boost::shared_ptr<U>&, const ros::TransportHints&)
+   Subscriber subscribe(const std::string& topic, uint32_t queue_size, void(T::*fp)(M) const, 
+[01;32m[K              ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:540:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/logger_node.cpp:57:90:[m[K [01;36m[Knote: [m[K  types ‘[01m[Kvoid (T::)(M) const[m[K’ and ‘[01m[Kvoid (Logger::)(const Odometry&) {aka void (Logger::)(const nav_msgs::Odometry_<std::allocator<void> >&)}[m[K’ have incompatible cv-qualifiers
+    base_link_ekf_sub_ = nh.subscribe("/robot/base_link_ekf_pose",1,&Logger::handleEKFPose);
+[01;32m[K                                                                                          ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/logger_node.cpp:2[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:594:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&), const boost::shared_ptr<U>&, const ros::TransportHints&)
+   Subscriber subscribe(const std::string& topic, uint32_t queue_size, 
+[01;32m[K              ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:594:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/logger_node.cpp:57:90:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::shared_ptr<const M>[m[K’ and ‘[01m[Kconst Odometry {aka const nav_msgs::Odometry_<std::allocator<void> >}[m[K’
+    base_link_ekf_sub_ = nh.subscribe("/robot/base_link_ekf_pose",1,&Logger::handleEKFPose);
+[01;32m[K                                                                                          ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/logger_node.cpp:2[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:605:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&) const, const boost::shared_ptr<U>&, const ros::TransportHints&)
+   Subscriber subscribe(const std::string& topic, uint32_t queue_size, 
+[01;32m[K              ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:605:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/logger_node.cpp:57:90:[m[K [01;36m[Knote: [m[K  types ‘[01m[Kvoid (T::)(const boost::shared_ptr<const M>&) const[m[K’ and ‘[01m[Kvoid (Logger::)(const Odometry&) {aka void (Logger::)(const nav_msgs::Odometry_<std::allocator<void> >&)}[m[K’ have incompatible cv-qualifiers
+    base_link_ekf_sub_ = nh.subscribe("/robot/base_link_ekf_pose",1,&Logger::handleEKFPose);
+[01;32m[K                                                                                          ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/logger_node.cpp:2[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:656:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (*)(M), const ros::TransportHints&)
+   Subscriber subscribe(const std::string& topic, uint32_t queue_size, void(*fp)(M), const TransportHints& transport_hints = TransportHints())
+[01;32m[K              ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:656:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/logger_node.cpp:57:90:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (*)(M)[m[K’ and ‘[01m[Kvoid (Logger::*)(const Odometry&) {aka void (Logger::*)(const nav_msgs::Odometry_<std::allocator<void> >&)}[m[K’
+    base_link_ekf_sub_ = nh.subscribe("/robot/base_link_ekf_pose",1,&Logger::handleEKFPose);
+[01;32m[K                                                                                          ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/logger_node.cpp:2[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:704:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (*)(const boost::shared_ptr<const M>&), const ros::TransportHints&)
+   Subscriber subscribe(const std::string& topic, uint32_t queue_size, void(*fp)(const boost::shared_ptr<M const>&), const TransportHints& transport_hints = TransportHints())
+[01;32m[K              ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:704:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/logger_node.cpp:57:90:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (*)(const boost::shared_ptr<const M>&)[m[K’ and ‘[01m[Kvoid (Logger::*)(const Odometry&) {aka void (Logger::*)(const nav_msgs::Odometry_<std::allocator<void> >&)}[m[K’
+    base_link_ekf_sub_ = nh.subscribe("/robot/base_link_ekf_pose",1,&Logger::handleEKFPose);
+[01;32m[K                                                                                          ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/logger_node.cpp:2[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:750:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, const boost::function<void(const boost::shared_ptr<const M>&)>&, const VoidConstPtr&, const ros::TransportHints&)
+   Subscriber subscribe(const std::string& topic, uint32_t queue_size, const boost::function<void (const boost::shared_ptr<M const>&)>& callback,
+[01;32m[K              ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:750:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/logger_node.cpp:57:90:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::function<void(const boost::shared_ptr<const M>&)>[m[K’ and ‘[01m[Kvoid (Logger::*)(const Odometry&) {aka void (Logger::*)(const nav_msgs::Odometry_<std::allocator<void> >&)}[m[K’
+    base_link_ekf_sub_ = nh.subscribe("/robot/base_link_ekf_pose",1,&Logger::handleEKFPose);
+[01;32m[K                                                                                          ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/logger_node.cpp:2[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:799:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class C> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, const boost::function<void(C)>&, const VoidConstPtr&, const ros::TransportHints&)
+   Subscriber subscribe(const std::string& topic, uint32_t queue_size, const boost::function<void (C)>& callback,
+[01;32m[K              ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:799:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/logger_node.cpp:57:90:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::function<void(C)>[m[K’ and ‘[01m[Kvoid (Logger::*)(const Odometry&) {aka void (Logger::*)(const nav_msgs::Odometry_<std::allocator<void> >&)}[m[K’
+    base_link_ekf_sub_ = nh.subscribe("/robot/base_link_ekf_pose",1,&Logger::handleEKFPose);
+[01;32m[K                                                                                          ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/logger_node.cpp:2[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:836:14:[m[K [01;36m[Knote: [m[Kcandidate: ros::Subscriber ros::NodeHandle::subscribe(ros::SubscribeOptions&)
+   Subscriber subscribe(SubscribeOptions& ops);
+[01;32m[K              ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:836:14:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/KinematicPositionController.cpp:[m[K In constructor ‘[01m[KKinematicPositionController::KinematicPositionController(ros::NodeHandle&)[m[K’:
+[01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/KinematicPositionController.cpp:12:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kbase_link_ekf_position_pub[m[K’ was not declared in this scope
+     base_link_ekf_position_pub = nh.advertise<nav_msgs::Odometry>("/robot/base_link_ekf_pose", 1);
+[01;32m[K     ^[m[K
+[01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/KinematicPositionController.cpp:[m[K In member function ‘[01m[Kvoid KinematicPositionController::getGroundTruthPoseAndVel(const ros::Time&)[m[K’:
+[01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/KinematicPositionController.cpp:89:70:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_to_robot_ekf[m[K’ was not declared in this scope
+   if (not lookupTransformSafe(tfBuffer_, "odom", "base_link_ekf", t, odom_to_robot_ekf))
+[01;32m[K                                                                      ^[m[K
+[01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/KinematicPositionController.cpp:90:12:[m[K [01;31m[Kerror: [m[Kreturn-statement with a value, in function returning 'void' [-fpermissive]
+     return false;
+[01;32m[K            ^[m[K
+[01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/KinematicPositionController.cpp:92:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kx[m[K’ was not declared in this scope
+   x = odom_to_robot_ekf.getOrigin().getX();
+[01;32m[K   ^[m[K
+[01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/KinematicPositionController.cpp:92:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_to_robot_ekf[m[K’ was not declared in this scope
+   x = odom_to_robot_ekf.getOrigin().getX();
+[01;32m[K       ^[m[K
+[01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/KinematicPositionController.cpp:93:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ky[m[K’ was not declared in this scope
+   y = odom_to_robot_ekf.getOrigin().getY();
+[01;32m[K   ^[m[K
+[01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/KinematicPositionController.cpp:100:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kbase_link_ekf_position_pub[m[K’ was not declared in this scope
+   base_link_ekf_position_pub.publish( msg );
+[01;32m[K   ^[m[K
+[01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/KinematicPositionController.cpp:[m[K At global scope:
+[01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/KinematicPositionController.cpp:117:6:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kvoid KinematicPositionController::getGroundTruthPoseAndVel(const ros::Time&)[m[K’
+ void KinematicPositionController::getGroundTruthPoseAndVel(const ros::Time& t)
+[01;32m[K      ^[m[K
+[01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/KinematicPositionController.cpp:86:6:[m[K [01;36m[Knote: [m[K‘[01m[Kvoid KinematicPositionController::getGroundTruthPoseAndVel(const ros::Time&)[m[K’ previously defined here
+ void KinematicPositionController::getGroundTruthPoseAndVel(const ros::Time& t)
+[01;32m[K      ^[m[K
+[01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/KinematicPositionController.cpp:[m[K In member function ‘[01m[Kbool KinematicPositionController::getPursuitBasedGoal(const ros::Time&, double&, double&, double&)[m[K’:
+[01m[K/home/juan/catkin_ws/src/lazo_cerrado/src/KinematicPositionController.cpp:196:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kwpoint_a[m[K’ [-Wunused-variable]
+     double wpoint_a = tf2::getYaw(wpoint.transform.rotation);
+[01;32m[K            ^[m[K
+make[2]: *** [CMakeFiles/logger.dir/src/logger_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/logger.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/trajectory_follower.dir/src/KinematicPositionController.cpp.o] Error 1
+make[1]: *** [CMakeFiles/trajectory_follower.dir/all] Error 2
+make: *** [all] Error 2

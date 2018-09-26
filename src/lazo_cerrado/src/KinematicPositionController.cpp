@@ -9,6 +9,7 @@ KinematicPositionController::KinematicPositionController(ros::NodeHandle& nh) :
 {
     expected_position_pub = nh.advertise<geometry_msgs::PoseStamped>("/goal_pose", 1);
     ground_truth_position_pub = nh.advertise<nav_msgs::Odometry>("/robot/ground_truth", 1);
+    base_link_ekf_position_pub = nh.advertise<nav_msgs::Odometry>("/robot/base_link_ekf_pose", 1);
     //real_velocity_sub = nh.subscribe("/robot/ground_truth",1,&KinematicPositionController::getRealVelocity,this);
     real_velocity_pub = nh.advertise<nav_msgs::Odometry>("/robot/real_velocity", 1); 
     ros::NodeHandle nhp("~");
@@ -78,11 +79,27 @@ bool KinematicPositionController::control(const ros::Time& t, double& v_x, doubl
   w_z = K_A * da; 
 
   //ROS_INFO_STREAM("current_x: " << current_x << " current_y: " << current_y << " current_a: " << current_a << " v_x: " << v_x << " v_y: " << v_y << " w_z: " << w_z);
-  getGroundTruthPose(t);
+  getGroundTruthPoseAndVel(t);
+  getBaseLinkEKFPose(t);
   return true;
 }
 
+void KinematicPositionController::getBaseLinkEKFPose(const ros::Time& t)
+{ 
+  tf2::Transform odom_to_robot_ekf;
+  if (not lookupTransformSafe(tfBuffer_, "odom", "base_link_ekf", t, odom_to_robot_ekf))
+    return;
+  double x,y;
+  x = odom_to_robot_ekf.getOrigin().getX();
+  y = odom_to_robot_ekf.getOrigin().getY();
 
+  nav_msgs::Odometry msg; 
+  msg.pose.pose.position.x = x;
+  msg.pose.pose.position.y = y;
+  msg.pose.pose.position.z = 0;
+  msg.header.stamp = t;
+  base_link_ekf_position_pub.publish( msg );
+}
 
 
 bool KinematicPositionController::getCurrentPose(const ros::Time& t, double& x, double& y, double& a)
@@ -98,7 +115,7 @@ bool KinematicPositionController::getCurrentPose(const ros::Time& t, double& x, 
   return true;
 }
 
-void KinematicPositionController::getGroundTruthPose(const ros::Time& t)
+void KinematicPositionController::getGroundTruthPoseAndVel(const ros::Time& t)
       {
           tf2::Transform odom_to_robot_ground_truth;
           if (not lookupTransformSafe(tfBuffer_, "odom", "base_link_gt", t, odom_to_robot_ground_truth))
@@ -147,7 +164,7 @@ void KinematicPositionController::getGroundTruthPose(const ros::Time& t)
 double dist2(double x0, double y0, double x1, double y1)
 { return sqrt((x1-x0)*(x1-x0) + (y1-y0)*(y1-y0));}
 
-#define lookahead 0.1
+
 
 bool KinematicPositionController::getPursuitBasedGoal(const ros::Time& t, double& x, double& y, double& a)
 {

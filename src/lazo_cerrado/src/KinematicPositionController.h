@@ -28,6 +28,7 @@ class KinematicPositionController : public TrajectoryFollower
     tf2_ros::TransformListener transform_listener_;
     ros::Publisher expected_position_pub;
     ros::Publisher ground_truth_position_pub;
+    ros::Publisher base_link_ekf_position_pub;
     ros::Subscriber real_velocity_sub;
     ros::Publisher real_velocity_pub;
     ros::Publisher desired_vel_pub;
@@ -45,7 +46,8 @@ class KinematicPositionController : public TrajectoryFollower
   // funciones auxiliares
     
     bool getCurrentPose(const ros::Time& t, double& x, double& y, double& a);
-    void getGroundTruthPose(const ros::Time& t);
+    void getGroundTruthPoseAndVel(const ros::Time& t);
+    void getBaseLinkEKFPose(const ros::Time& t);
     bool getCurrentGoal(const ros::Time& t, double& x, double& y, double& a)
     {
       switch(goal_selection_)
