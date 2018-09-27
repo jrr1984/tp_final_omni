@@ -36,9 +36,9 @@ KinematicPositionController::KinematicPositionController(ros::NodeHandle& nh) :
  * - K_RHO < K_ALPHA
  * - K_BETA < 0
  */
-#define K_X 0.1
-#define K_Y 0.1
-#define K_A 0.1
+#define K_X 1.0
+#define K_Y 1.0
+#define K_A 1.0
 
 double lineal_interp(const ros::Time& t0, const ros::Time& t1, double y0, double y1, const ros::Time& t)
 {
@@ -180,7 +180,7 @@ bool KinematicPositionController::getPursuitBasedGoal(const ros::Time& t, double
    * Se recomienda encontrar el waypoint de la trayectoria más cercano al robot en términos de x,y
    * y luego buscar el primer waypoint que se encuentre a una distancia predefinida de lookahead en x,y */
 
-   double lookahead_distance = 0.1;
+   double lookahead_distance = 0.05;
    double distancia_minima = 1000;
    robmovil_msgs::TrajectoryPoint punto_cercano;
    unsigned int i_min;
