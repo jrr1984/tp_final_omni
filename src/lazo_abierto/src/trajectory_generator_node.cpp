@@ -65,7 +65,7 @@ void build_sin_trajectory(double stepping, double total_time, double amplitude, 
 
     
     // calculo del angulo en cada momento y la derivada del angulo
-    double a = atan2( y - 4.1, x + 4.1);
+    double a = -atan2( 1, y+4);
 
     // double va = (vvy*vx-vvx*vy)/(vx*vx+vy*vy);
 
@@ -92,7 +92,7 @@ void build_sin_trajectory(double stepping, double total_time, double amplitude, 
   for (double t = 0; t < 4.1; t = t + stepping)
   {
     x = -t;
-    double a = atan2( y - 4.1, x - 4.1);
+    double a = -atan2( 1, x + 4)-M_PI/2.0;
     point_msg.time_from_start = ros::Duration( t );
 
     point_msg.transform.translation.x = x;
@@ -114,7 +114,7 @@ void build_sin_trajectory(double stepping, double total_time, double amplitude, 
   for (double t = 0; t < 4.1 ; t = t + stepping)
   {
     y = t - 4;
-    double a = atan2( y+4.1,x - 4.1);
+    double a = -atan2( 1,-t) - M_PI/2.0;
     
 
     point_msg.time_from_start = ros::Duration( t );
@@ -138,7 +138,7 @@ void build_sin_trajectory(double stepping, double total_time, double amplitude, 
   for (double t = 0; t < 4.1; t = t + stepping)
   {
     x = t - 4;
-    double a = atan2(y+4.1,x+4.1);
+    double a = -atan2(1,-t)-M_PI;
     point_msg.time_from_start = ros::Duration( t );
 
     point_msg.transform.translation.x = x;
