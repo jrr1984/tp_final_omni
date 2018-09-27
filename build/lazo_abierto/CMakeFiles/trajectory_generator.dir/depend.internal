@@ -102,3 +102,4 @@ CMakeFiles/trajectory_generator.dir/src/trajectory_generator_node.cpp.o
  /opt/ros/kinetic/include/tf2_ros/buffer_interface.h
  /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
  /opt/ros/kinetic/include/xmlrpcpp/XmlRpcValue.h
+ /opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp/XmlRpcValue.h

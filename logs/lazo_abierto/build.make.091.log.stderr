@@ -1,0 +1,16 @@
+[01m[K/home/juan/catkin_ws/src/lazo_abierto/src/trajectory_generator_node.cpp:[m[K In function ‘[01m[Kvoid build_sin_trajectory(double, double, double, double, robmovil_msgs::Trajectory&, nav_msgs::Path&)[m[K’:
+[01m[K/home/juan/catkin_ws/src/lazo_abierto/src/trajectory_generator_node.cpp:66:24:[m[K [01;31m[Kerror: [m[Ktoo many arguments to function ‘[01m[Kdouble atan(double)[m[K’
+     double a = atan(y,x)-M_PI/2;
+[01;32m[K                        ^[m[K
+In file included from [01m[K/usr/include/features.h:367:0[m[K,
+                 from [01m[K/usr/include/stdlib.h:24[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/platform.h:53[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/juan/catkin_ws/src/lazo_abierto/src/trajectory_generator_node.cpp:1[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/bits/mathcalls.h:58:1:[m[K [01;36m[Knote: [m[Kdeclared here
+ __MATHCALL (atan,, (_Mdouble_ __x));
+[01;32m[K ^[m[K
+make[2]: *** [CMakeFiles/trajectory_generator.dir/src/trajectory_generator_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/trajectory_generator.dir/all] Error 2
+make: *** [all] Error 2

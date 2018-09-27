@@ -5,6 +5,8 @@
 #include <geometry_msgs/PoseStamped.h>
 #include <geometry_msgs/PoseArray.h>
 #include <tf/tf.h>
+#include <XmlRpcValue.h>
+#include <vector>
 
 void build_sin_trajectory(double, double, double, double, robmovil_msgs::Trajectory&, nav_msgs::Path&);
 
@@ -55,7 +57,7 @@ void build_sin_trajectory(double stepping, double total_time, double amplitude, 
 
   double x = 0; //amplitude * sin( x );
   double y; //cycles * 2*M_PI * t * 1/total_time;
-  for (double t = 0; t <= 4.1; t = t + stepping)
+  for (double t = 0; t < 4.1; t = t + stepping)
   {
     // X se extiende lo suficiente para dar varias vueltas en el tiempo determinado
     // Y funcion seno con determinada amplitud
@@ -63,7 +65,7 @@ void build_sin_trajectory(double stepping, double total_time, double amplitude, 
 
     
     // calculo del angulo en cada momento y la derivada del angulo
-    double a = atan2( y - 2, x + 2);
+    double a = atan2( y - 4.1, x + 4.1);
 
     // double va = (vvy*vx-vvx*vy)/(vx*vx+vy*vy);
 
@@ -87,10 +89,10 @@ void build_sin_trajectory(double stepping, double total_time, double amplitude, 
     
     path_msg.poses.push_back(stamped_pose_msg);
   }
-  for (double t = 0; t <= 4.1; t = t + stepping)
+  for (double t = 0; t < 4.1; t = t + stepping)
   {
     x = -t;
-    double a = atan2( y - 2, x + 2);
+    double a = atan2( y - 4.1, x - 4.1);
     point_msg.time_from_start = ros::Duration( t );
 
     point_msg.transform.translation.x = x;
@@ -109,10 +111,10 @@ void build_sin_trajectory(double stepping, double total_time, double amplitude, 
     
     path_msg.poses.push_back(stamped_pose_msg);
   }
-  for (double t = 0; t <= 4.1; t = t + stepping)
+  for (double t = 0; t < 4.1 ; t = t + stepping)
   {
     y = t - 4;
-    double a = atan2( y+2,x - 2);
+    double a = atan2( y+4.1,x - 4.1);
     
 
     point_msg.time_from_start = ros::Duration( t );
@@ -133,10 +135,10 @@ void build_sin_trajectory(double stepping, double total_time, double amplitude, 
     
     path_msg.poses.push_back(stamped_pose_msg);
   }
-  for (double t = 0; t < 4; t = t + stepping)
+  for (double t = 0; t < 4.1; t = t + stepping)
   {
-    x = t - 3.9;
-    double a = atan2(y+2,x+2);
+    x = t - 4;
+    double a = atan2(y+4.1,x+4.1);
     point_msg.time_from_start = ros::Duration( t );
 
     point_msg.transform.translation.x = x;

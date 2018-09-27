@@ -63,6 +63,10 @@ geometry_msgs/PoseArray.h
 -
 tf/tf.h
 -
+XmlRpcValue.h
+-
+vector
+-
 
 /opt/ros/kinetic/include/geometry_msgs/Point.h
 string
@@ -1255,6 +1259,18 @@ ros/macros.h
 /opt/ros/kinetic/include/xmlrpcpp/XmlRpcValue.h
 xmlrpcpp/XmlRpcDecl.h
 /opt/ros/kinetic/include/xmlrpcpp/xmlrpcpp/XmlRpcDecl.h
+map
+-
+string
+-
+vector
+-
+time.h
+-
+
+/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp/XmlRpcValue.h
+xmlrpcpp/XmlRpcDecl.h
+/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp/xmlrpcpp/XmlRpcDecl.h
 map
 -
 string

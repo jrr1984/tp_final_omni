@@ -8,7 +8,7 @@
 
   <node pkg="lazo_abierto" type="trajectory_generator" name="trajectory_generator" output="screen" >
       <param name="stepping" type="double" value="0.1"/>
-    <param name="total_time" type="double" value="20"/>
+    <param name="total_time" type="double" value="100"/>
   </node>
 
   <node pkg="lazo_cerrado" type="trajectory_follower" name="trajectory_follower" output="screen" >
