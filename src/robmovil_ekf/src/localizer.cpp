@@ -143,6 +143,7 @@ void robmovil_ekf::Localizer::on_odometry(const nav_msgs::OdometryConstPtr& msg)
 {
   u(1) = msg->twist.twist.linear.x;
   u(2) = msg->twist.twist.linear.y;
+  u(3) = msg->twist.twist.angular.z;
   ROS_DEBUG_STREAM("Received linear velocity X: " << u(1) << " , " << "Received linear velocity Y: " << u(2));
 }
 

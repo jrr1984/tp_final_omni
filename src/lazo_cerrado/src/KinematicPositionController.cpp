@@ -36,9 +36,9 @@ KinematicPositionController::KinematicPositionController(ros::NodeHandle& nh) :
  * - K_RHO < K_ALPHA
  * - K_BETA < 0
  */
-#define K_X 1.0
-#define K_Y 1.0
-#define K_A 1.0
+#define K_X 0.1
+#define K_Y 0.1
+#define K_A 0.1
 
 double lineal_interp(const ros::Time& t0, const ros::Time& t1, double y0, double y1, const ros::Time& t)
 {
@@ -201,8 +201,7 @@ bool KinematicPositionController::getPursuitBasedGoal(const ros::Time& t, double
       i_min = i;
       distancia_minima = dist2(current_x, current_y, wpoint_x, wpoint_y);
     }
-    
-    //...
+
 
   }
 
